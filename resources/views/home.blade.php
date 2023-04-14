@@ -1,23 +1,12 @@
 @extends('layouts.app')
+@section('title')
+<h1 class="m-0">Dashboard</h1>
 
+@endsection
+@section('Subtitle')
+<li class="breadcrumb-item"><a href="#">Home</a></li>
+<li class="breadcrumb-item active">Dashboard v1</li>
+@endsection
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <p>Welcome to this beautiful admin panel.</p>
 @endsection
