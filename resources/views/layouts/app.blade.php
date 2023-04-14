@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daylight Inc</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('dist/img/logo.png') }}">
-  <link rel="shortcut icon" sizes="192x192" href="{{ asset('dist/img/logo.png') }}">
+  <title>Suspenciones BM</title>
+  <link rel="shortcut icon" type="image/png" href="{{ asset('dist/img/llave.png') }}">
+  <link rel="shortcut icon" sizes="192x192" href="{{ asset('dist/img/llave.png') }}">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -53,7 +53,7 @@
     @auth
     @include('layouts.navbar')
     <!-- /.navbar -->
-    {{-- @include('layouts.sidebar') --}}
+    @include('layouts.sidebar')
     @endauth
 
 

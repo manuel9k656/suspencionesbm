@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+$exitCode = Artisan::call('view:clear');
 
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
