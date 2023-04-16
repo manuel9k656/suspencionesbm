@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,11 +64,14 @@
       </form>
 
       <p class="mb-1">
-        @if (Route::has('password.request'))
+        {{-- @if (Route::has('password.request'))
         <a href="{{ route('password.request') }}" class="text-dark">
             <small>{{ __('Olvidaste Contraseña') }}</small>
         </a>
-        @endif
+        @endif --}}
+        @if (Route::has('register'))
+            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+    @endif
       </p>
       <p class="mb-0">
         {{-- <a href="{{ route('register')}}" class="text-center">Register a new membership</a> --}}
